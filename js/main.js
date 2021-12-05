@@ -13,6 +13,8 @@ var rangos = ['','','Rango 1', 'Rango 2', 'Rango 3', 'Rango 4', 'Rango 5',
 'Rango 13', 'Rango 14', 'Rango 15', 'Rango 15', 'Rango 16', 'Rango 17', 'Rango 18',
 'Rango 19','',''];
 
+var mapas = []
+
 
 function carrusel(contenedor){
     contenedor.addEventListener("click", e =>{
@@ -29,7 +31,8 @@ function carrusel(contenedor){
         let span4 = contenedor.querySelector('#span4');
         let span5 = contenedor.querySelector('#span5');
         let nombreObjeto = contenedor.querySelector('.nombre-objeto');
-        let seleccion = e.target;
+        let seleccion = e.target;//Para saber que elemento se ha seleccionado dentro del contenedor
+
 
         if(seleccion ==  retroceder){//Pulsa el boton de retroceder
             if(pos > 0){
@@ -109,6 +112,18 @@ function cuentaRegresiva(){
         spanhoras.innerHTML = "00";
     }
 
+}
+
+function carruselMapa(slider){
+    slider.addEventListener("click",e=>{
+        let retroceder = contenedor.querySelector('#retroceder');
+        let avanzar = contenedor.querySelector('#adelantar');
+        let mapa = contenedor.querySelector('#mapa');
+        let plano = contenedor.querySelector('#plano');
+        let seleccion = e.target;
+
+
+    })
 }
 
 document.addEventListener("DOMContentLoaded",() =>{

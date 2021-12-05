@@ -32,7 +32,7 @@ ul>li>a{
 /*----------------------------MENU----------------------------*/
 .menu{
     background-color: #1A1A1A;
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     margin: 0%;
     justify-content: space-between;
@@ -47,7 +47,7 @@ ul>li>a{
 }
 /*----------------------------MENU-LOG----------------------------*/
 .menu-log{
-    display: flex;
+    display: none;
     background-color: #1A1A1A;
     flex-wrap: wrap;
     margin: 0%;
@@ -340,7 +340,7 @@ h2{
 }
 
 .caja-log>div{
-    width: 30vw;
+    width: 35vw;
     padding: 1vh 2vw;
 }
 
@@ -348,7 +348,8 @@ h2{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 30vw;
 }
 
 .caja-log>div>form>label{
@@ -356,7 +357,9 @@ h2{
     margin-top: 2vh;
 }
 .caja-log>div>form>input{
-    min-height: 4vh;
+    min-height: 2.5vw;
+    width: 30vw;
+
 }
 
 .caja-acceso{
@@ -379,7 +382,9 @@ h2{
 }
 
 .caja-registro>form{
-color: white;}
+    color: white;
+    width: 30vw;
+}
 
 .boton{
     align-self: center;
@@ -459,7 +464,7 @@ color: white;}
 
 }
 .main-contacto>section>section>h1{
-    font-size: 13vh;
+    font-size: 7vw;
     text-align: left;
     color: #54E3AC;
     margin: 0;
@@ -637,4 +642,117 @@ color: white;}
 .recuadro-armas>img{
     width: 20vw;
 
+}
+
+/*----------------------------MAPAS----------------------------*/
+
+.main-mapas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 5% 10% 0% 10%;
+    min-height: 70vh;
+}
+
+.main-mapas>section>h1{
+    color: #54E3AC;
+    display: inline;
+    border-bottom: 0;
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    font-size: 7vw;
+    margin-bottom: 0;
+}
+
+.main-mapas>section{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.slider{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   
+}
+
+
+.recuadro-mapas{
+    display: flex;
+    position: relative;
+    
+}
+
+#mapa{
+    width: 55vw;
+    z-index: -1;
+}
+
+#plano{
+    width: 35%;
+    z-index: 1;
+    position: absolute;
+    top: -5vw;
+    right: -5vw;
+    
+}
+
+.boton-slider{
+    width: 10vw;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    opacity: 50%;
+    
+}
+.boton-slider>img{
+    background: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
+    object-fit: cover;
+    height: 100%;
+    width: 10vw;
+    position: absolute;
+    object-position: left;
+}
+
+.porcentaje{
+    height: 10vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: column;
+
+}
+
+.porcentaje>h2{
+    color: black;
+    display: inline;
+    border-bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.porcentaje>div{
+    width: 60vw;
+    background-color: rgb(21, 156, 150);
+    min-height: 5vw;
+    align-self: center;
+    padding: 0%;
+    position: relative;
+}
+.porcentaje>div>span{
+    display: inline-block;
+    height: 100%;
+    background-color: rgb(190, 37, 37);
+    width: 30%;
+    right: 0;
+    position: absolute;
+    font-size: 2vw;
+    text-align: center;
+    
 }
